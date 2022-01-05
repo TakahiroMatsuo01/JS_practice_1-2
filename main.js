@@ -3,7 +3,7 @@ const getProperty = function () {
      if( input === "東京" ) {
          confirm(　"正解です！"　);
      } else if( input !== "東京" ) {
-         confirm( "不正解です！" );
+         alert( "不正解です！" );
      }
  }
  
