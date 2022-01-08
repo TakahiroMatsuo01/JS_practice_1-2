@@ -1,12 +1,13 @@
 const getProperty = () => {
-   let input = prompt("日本の首都は？");
-    if( input === "東京" ) {
-        confirm(　"正解です！"　);
-    }else if( input !== "東京" ) {
-        alert( "不正解です！" );
-  }
+   let input = prompt('日本の首都は？');
+   while(input !== '東京') {
+        if(input === '東京') {
+        confirm('正解です！');
+        break;
+    } else if(input !== '東京') {
+        alert('不正解です！');
+        return getProperty();
+  　}
+　}
 }
-while(getProperty.input!=="東京"){
-     getProperty();
-    break;
-}
+getProperty();
